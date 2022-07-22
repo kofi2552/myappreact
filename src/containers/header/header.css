@@ -1,0 +1,142 @@
+.header  {
+    padding: 0 !important;
+    background: #ffa200;
+}
+
+#head {
+    background: #f19900;
+    /* background-color: #006d6d; */
+    padding: 50px;
+}
+
+.header .banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header a {
+    color: #006d6d;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+
+/* @media screen and (max-width:650px){
+    .header h3 {
+        font-size: 26px;
+    }
+    .main-banner-section {
+        background-color: transparent;
+        background-image: url(../images/banner.jpg);
+    }
+} 
+
+
+@media(max-width:280px){
+      .header h3 {
+      font-size: 26px;
+    }
+    .main-banner-section {
+        background-color: transparent;
+        background-image: url(../images/banner.jpg);
+    }
+}  */
+
+
+
+/*--------------------------------------------------- SEARCH BAR SECTION --------------------------------------------------------*/
+#search {
+    background-color: #fff;
+}
+
+.search-section {
+    padding: 0px 10px 0px 10px;
+    /* border-bottom: 0.5px solid rgb(209, 209, 209); */
+
+}
+
+.searchbar {
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.searchbar .input {
+  border: 0;
+  outline: none;
+  background-color: #e2e8ec;
+}
+
+.search_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.search_wrap .search_box {
+  position: relative;
+  max-width: 1000px;
+  height: 50px;
+}
+
+.search_wrap .search_box .input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.search_wrap .search_box .search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #008ec3;
+  z-index: 7;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+
+.search_wrap .search_box .search-button:hover {
+  background-color: #0088b9;
+}
+
+.search_wrap .search_box .search-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.search_wrap .search_box .search-button svg:hover {
+  color: #e0e0e0;
+}
+
+/* .show {
+    display: block;
+  }
+   */
+
+

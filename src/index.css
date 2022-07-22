@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --font-family: 'Manrope', sans-serif;
+  --font-familia: 'Inter', sans-serif;
+
+  --color-mainText: rgb(23, 39, 39);
+  --color-subtextText: rgb(23, 39, 39);
+  --color-mainBody: rgb(253, 253, 253);
+  --color-regularText: rgb(32, 32, 32);
+  --color-normalText: rgb(56, 56, 56);
+
+  --h3-font-size: 48px;
+
+}
+.body {
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  max-width: 1500px;
+  padding: 0px 10px;
+ /* overflow: hidden;  */
+}
+
+.--normal-button {
+  padding: 0.5rem 1rem;
+  color: #ffff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.--normal-text {
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: #374957;
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.--regularText {
+  font-size: 1rem;
+  line-height: 24px;
+  color: #374957;
+  font-family: var(--font-family);
+  font-weight: 600;
 }
