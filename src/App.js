@@ -2,7 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-import { Cta, Brand, Navbar, Contact } from './components';
+// import { Cta, Brand, Navbar, Contact } from './components';
+import { Navbar } from './components';
 import { Artworks, Footer, Header } from './containers';
 
 const App = () => {
@@ -13,10 +14,9 @@ const App = () => {
         <Header />
       </div>
       <Artworks />
-      <Brand />
-      <Cta />
-      <Contact />
+      
       <Footer />
+      <a className="go2topbtn" href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
   );
 }
