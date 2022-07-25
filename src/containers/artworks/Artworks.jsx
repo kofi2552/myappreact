@@ -15,7 +15,7 @@ const Artworks = () => {
     setCollection([...new Set(GalleryData.map((item)=> item.category))])
   },[])
 
-console.log(data);
+// console.log(data);
 
 const Gallery_filter = (itemData) =>{
   const filterData = GalleryData.filter((item)=> item.category === itemData);
