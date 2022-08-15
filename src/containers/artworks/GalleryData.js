@@ -63,5 +63,19 @@ import artwork6 from '../../assets/artworks/img_6.jpg';
         price:"$100",
         description: 'Modern UiUx Design Artwork'
     },
+    {
+        id:8,
+        category:"UiUx",
+        image:artwork6,
+        price:"$100",
+        description: 'Modern UiUx Design Artwork'
+    },
+    {
+        id:8,
+        category:"UiUx",
+        image:artwork6,
+        price:"$100",
+        description: 'Modern UiUx Design Artwork'
+    },
 ];
 

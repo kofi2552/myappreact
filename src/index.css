@@ -8,15 +8,20 @@
   --font-family: 'Manrope', sans-serif;
   --font-familia: 'Inter', sans-serif;
 
-  --color-mainText: rgb(23, 39, 39);
-  --color-subtextText: rgb(23, 39, 39);
-  --color-mainBody: rgb(253, 253, 253);
-  --color-regularText: rgb(32, 32, 32);
-  --color-normalText: rgb(56, 56, 56);
+  --color-mainText: #172727;
+  --color-subtextText: #172727;
+  --color-mainBody: #fdfdfd;
+  --color-regularText: #202020;
+  --color-normalText: #383838;
 
   --h3-font-size: 48px;
 
 }
+
+*{
+  scroll-behavior: smooth;
+}
+
 .body {
   overflow: hidden;
 }
