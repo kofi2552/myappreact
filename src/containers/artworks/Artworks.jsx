@@ -34,8 +34,8 @@ const Artworks = (props) => {
                 
                   <div className="galleryItem">
                         <img src={item.image} key={item.id} className="img-fluid" alt="artwork"/>
-                      <div className='des'>
-                          <span>{item.price}</span>
+                          <div className='des'>
+                            <span>{item.price}</span>
                               <a href='#home'>
                               <img className='download' src={download} alt=""/>
                               </a>

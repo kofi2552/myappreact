@@ -38,7 +38,8 @@ function setfixed(){
       <div className="body">
         <Navbar />
         <Header />
-          <div className={fix ? 'col-lg-12 search-bar fixed' : 'search-bar col-lg-12'}>
+        <div>
+          <div className={fix ? 'search-bar fixed' : 'search-bar'}>
           <div className="search-section">
               <div className="offset-lg-3 col-lg-6">
                   <div className="searchbar">
@@ -60,11 +61,10 @@ function setfixed(){
             </div>
         </div>
       </div>
-  
-    </div>
-
+      </div>
       <Artworks input={inputText}/>
-      
+    </div>
+ 
       <Footer />
       <a className="go2topbtn" href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
