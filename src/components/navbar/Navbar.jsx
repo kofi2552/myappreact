@@ -26,46 +26,61 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-links-container">
-          <Link to="/">
-            <a className="nav-link" href="##">
-              Home
-            </a>
-          </Link>
-          <Link to="/projects">
-            <a className="nav-link" href="##">
-              Projects
-            </a>
-          </Link>
-          <Link to="/team">
-            <a className="nav-link" href="##">
-              Team
-            </a>
-          </Link>
-          <Link to="/contact">
-            <a className="nav-link" href="##">
-              Contact
-            </a>
-          </Link>
+          <div className="menu-links">
+            <Link to="/">
+              <a className="nav-link" href="##">
+                Home
+              </a>
+            </Link>
+            <Link to="/projects">
+              <a className="nav-link" href="##">
+                Projects
+              </a>
+            </Link>
+            <Link to="/team">
+              <a className="nav-link" href="##">
+                Team
+              </a>
+            </Link>
+            <Link to="/contact">
+              <a className="nav-link" href="##">
+                Contact
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="navbar-sign">
-        <Link to="/login">
-          <p>Sign in</p>
-        </Link>
-
-        <Link to="/Signup">
-          <button type="button">Sign up</button>
-        </Link>
+        <div className="accounts-access">
+          <div>
+            <Link to="/login">
+              <button>Sign in</button>
+            </Link>
+          </div>
+          <div>
+            <Link to="/Signup">
+              <button className="bttn" type="button">
+                Sign up
+              </button>
+            </Link>
+          </div>
+        </div>
         <div className="logdin-user">
-          <Link to="/cart">
-            <div className="cart-btn">
-              <img src={cartlogo} alt="no-img" className="cartlogo" />
-              <span className="cart-number">0</span>
-            </div>
-          </Link>
-          <Link to="/Profile">
-            <img src={avatar} className="profile-icon" alt="no-img" />
-          </Link>
+          <div className="cart-btn">
+            <Link to="/cart">
+              <div className="cart-box">
+                <img src={cartlogo} alt="no-img" className="cartlogo" />
+                <span className="cart-number">0</span>
+              </div>
+            </Link>
+          </div>
+          <div className="pro-image">
+            <Link to="/Profile">
+              <div className="avatar-box">
+                <img src={avatar} className="profile-icon" alt="no-img" />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 

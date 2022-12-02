@@ -24,14 +24,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/">
+                <Link to="/sell">
                   <a className="nav-link" href="##">
                     Sell Works
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/">
+                <Link to="/learn">
                   <a className="nav-link" href="##">
                     Learn
                   </a>
@@ -47,7 +47,7 @@ const Footer = () => {
                 </span>
               </li>
               <li className="nav-item">
-                <Link to="/">
+                <Link to="/about">
                   <a className="nav-link" href="##">
                     About
                   </a>
@@ -61,14 +61,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/">
+                <Link to="/services">
                   <a className="nav-link" href="##">
                     Services
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/">
+                <Link to="/privacy">
                   <a className="nav-link" href="##">
                     Privacy
                   </a>
