@@ -1,74 +1,35 @@
-import React, {useState} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
-import { Navbar } from './components';
-import {Artworks, Footer, Header } from './containers';
+import { Contact, Projects } from "./components";
+import Login from "./components/login/Login";
+import Signup from "./components/signup/Signup";
+import Home from "./components/home/Home";
+import Team from "./components/team/Team";
+import Cart from "./components/cart/Cart";
+import Profile from "./components/profile/Profile";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import E404page from "./components/E404page";
 
 const App = () => {
-
-  //Sticky Top Search Bar
-const [fix, setFix] = useState(false);
-function setfixed(){
-  if (window.scrollY >=375){
-    setFix(true)
-    } 
-    else {
-      setFix(false)
-    }
-  }
-  window.addEventListener("scroll", setfixed);
-
-
-
-  //Search filter
-  const [inputText, setInputText] = useState("");
-
-  const inputHandler = (e) => {
-    var lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
-    e.preventDefault();
-  };
-    
-
-
   return (
-    <div className="App">
-      <div className="body">
-        <Navbar />
-        <Header />
-        <div>
-          <div className={fix ? 'search-bar fixed' : 'search-bar'}>
-          <div className="search-section">
-              <div className="offset-lg-3 col-lg-6">
-                  <div className="searchbar">
-                      <div className="search_wrap">
-                          <div className="search_box">
-                              <input type="text" className="input" placeholder="Search artworks" onChange={(e) => setInputText(e.target.value)}/>
-                              
-                              <button type="button" className="search-button" onClick={inputHandler}>
-                              
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-search">
-                                      <circle cx="11" cy="11" r="8"></circle>
-                                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                  </svg>
-                                
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-            </div>
-        </div>
-      </div>
-      </div>
-      <Artworks input={inputText}/>
-    </div>
- 
-      <Footer />
-      <a className="go2topbtn" href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/team" element={<Team />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/profile" element={<Profile />} />
+        <Route path="*" element={<E404page />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

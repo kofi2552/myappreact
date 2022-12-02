@@ -1,0 +1,216 @@
+
+/* animation: App-logo-spin infinite 20s linear;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #fafafa;
+  }
+  
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+  
+  .section__padding {
+    padding: 4rem 6rem;
+  }
+  
+  .section__margin {
+    margin: 4rem 6rem;
+  }
+  
+  .scale-up-center {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  
+   @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    .section__padding {
+      padding: 4rem;
+    }
+    
+    .section__margin {
+      margin: 4rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 550px) {
+    .section__padding {
+      padding: 4rem 2rem;
+    }
+    
+    .section__margin {
+      margin: 4rem 2rem;
+    }
+  }
+  
+  .App .go2topbtn:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #00476d;
+  }
+  
+  .go2topbtn{
+    position: fixed;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    background: #004063;
+    bottom: 35px;
+    right: 35px;
+    text-decoration: none;
+    text-align: center;
+    /* line-height: 50px; */
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    z-index: 10000;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*------------------------------ SEARCH BAR CSS ------------------------------*/
+  
+  .search-bar {
+    background-color: #fff;
+    /* background-color: #83deff; */
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  
+  
+  .search-bar.fixed {
+  width: 100% !important;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  z-index: 1000;
+  /* background-color: #ffcccc; */
+  /* margin-left: 12px !important; */
+  }
+  
+  
+  .search-section {
+    padding: 0px 10px 0px 10px;
+    overflow: hidden;
+    /* border-bottom: 0.5px solid rgb(209, 209, 209); */
+  }
+  
+  .searchbar {
+  width: 100%;
+  margin:0 auto;
+  margin-top: 15px;
+  overflow: hidden;
+  }
+  
+  .searchbar .input {
+  border: 0;
+  outline: none;
+  background-color: #e2e8ec;
+  }
+  
+  .search_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  }
+  
+  .search_wrap .search_box {
+  position: relative;
+  max-width: 1000px;
+  height: 50px;
+  }
+  
+  .search_wrap .search_box .input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  }
+  
+  .search_wrap .search_box .search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #008ec3;
+  z-index: 7;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  }
+  
+  
+  .search_wrap .search_box .search-button:hover {
+  background-color: #0088b9;
+  }
+  
+  .search_wrap .search_box .search-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  flex-wrap: wrap;
+  }
+  
+  .search_wrap .search_box .search-button svg:hover {
+  color: #e0e0e0;
+  }
+  
+  /* .show {
+    display: block;
+  }
+   */
+  
