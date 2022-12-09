@@ -72,11 +72,13 @@ const Signup = () => {
           <p>Create Account</p>
 
           {errormsg && <div className="error-msg">{errormsg}</div>}
-          <label>Full Name</label>
+          <label>
+            Username<span className="example"> (eg:TonyKay)</span>
+          </label>
           <input
             onChange={(e) => setUserName(e.target.value)}
             type="text"
-            placeholder="Enter your name"
+            placeholder="Enter your firstname as username"
           />
           <label>Mobile Number</label>
           <input

@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 import Navbar from "../navbar/Navbar";
-
+// import Header from "../../containers/header/Header";
 const Projects = () => {
   return (
     <div className="App">

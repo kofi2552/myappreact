@@ -1,6 +1,6 @@
 ._navbar {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     padding: 1rem 2%;
     background: teal;
@@ -32,12 +32,17 @@
 
 .menu-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .navbar-sign {
     /* flex: 1; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-sign2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,9 +96,8 @@
     font-size: 16px;
     line-height: 14px;
     text-transform: capitalize;
-    margin: 0 0.5rem;
+    margin: 0 0.3rem;
     cursor: pointer;
-    
 }
 
 .navbar-sign .bttn,
@@ -137,7 +141,7 @@
     color: rgb(1, 136, 136);
     /* color: #ffff; */
     text-align: end;
-    background-color: #fff;
+    background-color: #f5f5f5;
     /* background-color: rgb(1, 136, 136); */
     padding: 2rem;
     position: absolute;
@@ -149,6 +153,7 @@
     /* box-shadow: 2 2 5 rgba(0,0,0,0.9); */
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     z-index: 99999;
+    /* position: fixed; */
 }
 
 .navbar-menu-container p {
@@ -169,43 +174,89 @@
 
 .logdin-user {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     /* background-color: #ff2a00; */
     /* margin-left: 40px !important;
     margin-right: -10px !important; */
-    max-width: 200px;
+    width: 100px;
+}
+
+.user-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.not-user-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logdin-user2 {
+    display: flex;
+    align-items: center;
+    background-color: #ff2a00;
+    /* margin-left: 40px !important;
+    margin-right: -10px !important; */
+    width: 100px;
 }
 
 .cartlogo {
     display: inline-block;
-    width: 80%;
+    width: 100%;
+}
+.cartlogo2 {
+    display: inline-block;
+    width: 100%;
 }
 
 .cart-box {
     display: flex;
-    width: 35px;
-    height: 35px;
     object-fit: contain;
     /* background-color: black; */
+    margin-right: 20px;
+}
+.cart-box2 {
+    display: flex;
+    object-fit: contain;
+    /* background-color: black; */
+    /* margin-right: 20px; */
+
 }
 
 .cart-btn {
-    float: left;
+    display: flex;
+    /* margin-right: 45px; */
 }
 
-.cart-number {
+
+span.cart-number {
     font-size: 14px;
+    padding: 10px;
     color: #fff;
     font-weight: 500;
     background-color: #ffa200;
-    border-radius: 100%;
-    padding: 8px 13px 8px 13px;
+    display: inline-block;
+    width: 40px;
+    line-height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    /* padding: 8px 13px 8px 13px; */
 }
 
 .profile-icon {
-    display: block;
-    width: 100%;
+    width: 35%;
+}
+.profile-icon2 {
+    display: inline-block;
+    width: 40%;
+    background-color: #ffa200;
+    margin-bottom: 30px;
+    margin-right: -10px !important;
 }
 
 .avatar-box {
@@ -213,11 +264,11 @@
     height: 40px;
     object-fit: contain;
     /* background-color: black; */
-    margin-left: 45px;
 }
 
 .pro-image {
-    float: right; 
+    /* float: left;  */
+    background-color: #ffa200;
 }
 
 
@@ -228,12 +279,43 @@
     .navbar-menu {
         display: flex;
     }
+
 }
 
 @media screen and (max-width: 700px){
     ._navbar {
         padding: 2rem 4rem;
     }
+    .logdin-user {
+        width: 100px;
+    }
+
+    .cart-box{
+        margin-top: 15px;
+        margin-right: -20px !important;
+    }
+    
+    .cartlogo2 {
+        background-color: teal;
+    }
+    .navbar-menu-container-links-sign p, button {
+        font-size: 24px;
+        font-weight: 700;
+        color: #007c9b;
+        margin-top: -10px; 
+    }
+    .navbar-menu-container-links-sign button {
+        font-size: 18px !important;
+        margin-top: -5px !important;
+        margin-bottom: 12px;
+        padding: 0.5rem 1.0rem;
+        margin-right: -10px;
+    }
+    .navbar-menu-container a {
+        font-size: 18px;
+        margin: -2.5px 0.5rem;
+    }
+    
 }
 
 @media screen and (max-width: 550px){
@@ -250,4 +332,20 @@
         display: block;
     }
 }
-    
+
+.user {
+    display: flex;
+}
+
+.username {
+    font-size: 14px;
+    color: #fff;
+    /* background-color: #ffa200; */
+    margin-left: -66px !important;
+    padding-top: 6px;
+    text-align: center;
+    height: 15px;
+}
+.username span {
+    color: #ffb83c;
+}

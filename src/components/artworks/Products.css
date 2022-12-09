@@ -1,213 +1,82 @@
-.artworks {
+
+.allproducts-page {
     width: 100%;
-  }
-  
-  
-  /* .colun {
-    float: left;
-    width: 300px;
-    display: none; 
-  } */
-  
-    
-  .gall:after {
-    content: "";
-    width: 300px;
-    display: table;
-    clear: both;
-  }
-  
-  
-  .gall {
-    width: 90%;
-    /* background-color: #006d6d; */
-    margin: 15px auto;
-    display: grid;
-    /* grid-template-rows: repeat(4, 300px); */
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 15px;
-    /* grid-auto-rows: 300px;
-    grid-auto-columns: 300px; */
-    overflow: hidden !important;
-    padding-top: 15px;
-  }
-  
-  .gall a {
-    overflow: hidden;
-    display: block;
-  }
-  
-  /* Content */
-  .colun {
-    width: 300px;
-    position: relative;
-    background-color: rgb(136, 136, 136);
-    border-radius: 5px;
-  }
-  
-  .colun {
-    display: none; 
-  }
-  
-  .colun img{
-    border-radius: 3px;
-  }
-  
-  
-  
-  .artworks .gall .text{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    height: 300px;
-    flex-wrap: wrap;
-    bottom: 0;
-    left: 0;
-    cursor: pointer;
-    color: #fff;
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,0), rgba(52, 52, 52, 0.8));
-    overflow: hidden;
-    padding-left: 5px;
-  }
-  
-  .artworks .gall .text_info {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    overflow: hidden;
-    display: block;
-    width: 100%;
-    margin: 0;
-    text-overflow: ellipsis;
-    text-align: left;
-    white-space: nowrap;
-    padding-top: 260px;
-    margin-left: 5px;
-    padding-right: 5px;
-  }
-  
-  
-  .artworks .gall .text:hover {
-    opacity: 1;
-  } 
-  
-  .artworks .gall .text img {
-    margin-top: -540px;
-    margin-left: 260px;
-  }
-  
-  .artworks .gall .text .cost {
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: -520px;
-    margin-left: 10px;
-    padding:3px 10px;
-    background-color: #0092e0;
-    border-radius: 3px;
-  }
-  
-  .artworks .gall .text .cost:hover {
-    background-color: #0284ca;
-  }
-
-
-
-
-
-
-
-  /*------------------------------------------ MENU ----------------------------------------------------*/
-  
-  .mainfilterbox {
-    overflow: auto;
-    display: grid;
-    justify-content: center !important;
-    padding: 10px 0px 0px 0px;
-    border-bottom: 0.5px solid rgb(209, 209, 209);
-    background: #fff;
-    /* margin-left: -25px !important; */
     margin: 0 auto !important;
-    width: 100%;
-  }
-  
-  .mainfilterbox.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    padding-top: 80px;
   }
 
-  .mainfilterbox ul {
+  .allproducts-container {
+    width: 72%;
+    margin:0 auto;
+    min-height: 80vh;
+  }
+
+  .products-container {
     display: flex;
-    flex-wrap: nowrap;
-    max-width: 700px;
-    margin-left: -50px;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    /* margin: 0 auto; */
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .mainfilterbox li{
-    font-size: 16px;
-    flex:1 0 auto;
-    padding: 0 20px;
-    cursor: pointer;
-    color: #5f7d95;
-    font-weight: 600;
-    list-style: none;
-    margin: 0 auto;
-    line-height: 50px;
-    height: 50px;
-  }
-  
-  .mainfilterbox li:hover {
-      color: #374957;
-    }
-    
-  .mainfilterbox li.active {
-    color: #374957;
-    border-color: #374957;
-    border-bottom: 1px solid #80909b;
-  }
+ .bold {
+  font-size: 40px;
+  font-weight: 700;
+ } 
+
+ .heading {
+  font-size: 38px;
+  color: #546a7c;
+ }
+
+ .detail {
+  color: #5f7d95;
+  font-size: 18px;
+  text-align: center;
+ }
+
+.text-small {
+  font-size: 14px;
+  color: red;
+  background-color: #f8f8f8;
+  margin-left: 60px;
+  margin-top: 12px;
+  width: 40px;
+  text-align: center;
+}
 
 
+/*----------------------------------------- PRODUCTCONTAINER ------------------------------ */
 
-
-/* ---------------------------------ARTWORK CARD CSS -----------------------------------*/
-.galleryWrapper {
+.product-card {
   background: #f8f8f8;
   padding: 2% 2%;
 }
 
-.galleryWrapper .galleryContainer {
+.product-card .product-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  /* gap: 20px; */
   flex-wrap: wrap;
-  
 }
 
-.galleryItem {
+.product-item {
   position: relative;
   width: 100%; 
   border-radius: 10px;
 }
 
 
-.galleryItem img {
-  width: 100%;
-  height: 250px;
+.product-item .product-image {
   object-fit: cover;
 }
 
+.product-image img {
+  max-width: 250px;
+  max-height: 250px;
+}
 
 
  /* ---------------------------------ARTWORK CONTENT CSS ----------------------------------- */
 
- .galleryItem .des {
+ .product-item .product-details {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -226,7 +95,7 @@
   opacity: 0;
  }
 
- .galleryItem .des span {
+ .product-item .product-details span {
   font-size: 14px;
   line-height: 15px;
   font-weight: 500;
@@ -241,7 +110,7 @@
   left: 10px;
  }
 
- .galleryItem .des .download {
+ .product-item .product-details .download {
   width: 30px;
   height: 30px;
   padding: 7px;
@@ -253,9 +122,10 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 10px;
  }
 
- .galleryItem .des .description {
+ .product-item .product-details .description {
   font-size: 16px;
   font-weight: 500;
   text-overflow: ellipsis;
@@ -268,7 +138,7 @@
  }
 
  
-  .galleryItem .des:hover {
+  .product-item .product-details:hover {
   opacity: 1;
   width: 100%;
   /* margin-top: -10px !important; */
@@ -280,22 +150,22 @@
  
 /*----------------------------------------- MEDIA QUERIES FOR RESPONSIVE SCREENS ------------------------------ */
 @media screen and (max-width: 1110px){
-  .galleryContainer {
+  .product-content {
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
   }
-  .galleryItem .des .description {
+  .product-item .product-details .description {
     font-size: 14px;
   }
- .galleryItem .des {
+ .product-item .product-details {
   width: 100%;
 }
 }
 
  @media screen and (max-width: 1000px){
-  .galleryContainer {
+  .product-content {
     grid-template-columns: 1fr 1fr 1fr !important;
   }
-  .galleryItem .des {
+  .product-item .product-details {
     width: 100%;
   }
 }
@@ -405,3 +275,121 @@
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+  /* .colun {
+    float: left;
+    width: 300px;
+    display: none; 
+  } */
+  
+    
+  .gall:after {
+    content: "";
+    width: 300px;
+    display: table;
+    clear: both;
+  }
+  
+  
+  .gall {
+    width: 90%;
+    /* background-color: #006d6d; */
+    margin: 15px auto;
+    display: grid;
+    /* grid-template-rows: repeat(4, 300px); */
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+    /* grid-auto-rows: 300px;
+    grid-auto-columns: 300px; */
+    /* overflow-x: hidden !important; */
+    padding-top: 15px;
+  }
+  
+  .gall a {
+    overflow: hidden;
+    display: block;
+  }
+  
+  /* Content */
+  .colun {
+    width: 300px;
+    position: relative;
+    background-color: rgb(136, 136, 136);
+    border-radius: 5px;
+  }
+  
+  .colun {
+    display: none; 
+  }
+  
+  .colun img{
+    border-radius: 3px;
+  }
+  
+  
+  
+  .artworks .gall .text{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 300px;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    color: #fff;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,0), rgba(52, 52, 52, 0.8));
+    overflow: hidden;
+    padding-left: 5px;
+  }
+  
+  .artworks .gall .text_info {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-overflow: ellipsis;
+    text-align: left;
+    white-space: nowrap;
+    padding-top: 260px;
+    margin-left: 5px;
+    padding-right: 5px;
+  }
+  
+  
+  .artworks .gall .text:hover {
+    opacity: 1;
+  } 
+  
+  .artworks .gall .text img {
+    margin-top: -540px;
+    margin-left: 260px;
+  }
+  
+  .artworks .gall .text .cost {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: -520px;
+    margin-left: 10px;
+    padding:3px 10px;
+    background-color: #0092e0;
+    border-radius: 3px;
+  }
+  
+  .artworks .gall .text .cost:hover {
+    background-color: #0284ca;
+  }
+
+

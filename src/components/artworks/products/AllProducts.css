@@ -1,0 +1,16 @@
+.allproducts-page {
+    width: 100%;
+    margin: 0 auto !important;
+  }
+
+  .allproducts-container {
+    width: 72%;
+    margin:0 auto;
+    min-height: 80vh;
+  }
+
+  .products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

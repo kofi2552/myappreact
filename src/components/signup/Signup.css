@@ -56,3 +56,8 @@ p{
     font-weight: 500;
     color: teal;
 }
+
+.example {
+    font-size: 10px;
+    color: rgb(155, 155, 155);
+}

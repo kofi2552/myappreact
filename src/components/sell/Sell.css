@@ -1,0 +1,10 @@
+.sell-body {
+    background-color: aliceblue;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}

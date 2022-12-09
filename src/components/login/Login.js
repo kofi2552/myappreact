@@ -22,7 +22,7 @@ const Login = () => {
         setTimeout(() => {
           //   SetSuccessmsg("");
           navigate("/home");
-        }, 100);
+        }, 0);
       })
       .catch((error) => {
         console.log(error.message);

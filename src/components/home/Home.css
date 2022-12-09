@@ -81,6 +81,23 @@
       margin: 4rem 2rem;
     }
   }
+
+  .banner p{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 120px 80px;
+    margin: 0 60px;
+    border-radius: 10px;
+  }
+
+  .img1 p{
+    background-color:#e7980f ;
+  }
+  
+  .img2 p{
+    background-color: #00476d;
+  }
   
   .App .go2topbtn:hover {
     text-decoration: none;

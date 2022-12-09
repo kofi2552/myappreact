@@ -5,7 +5,7 @@ const Cart = () => {
   return (
     <div>
       <Navbar />
-      Your Cart is Full
+      CART
     </div>
   );
 };
